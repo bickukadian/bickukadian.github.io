@@ -7,28 +7,24 @@
     <meta name="author" content="Ashish">
     <title>Blood Donation | welcome</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
     <link rel="shortcut icon" href="./images/fevicon.png" type="image/png">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+      src = "http://code.jquery.com/jquery-1.11.0.min.js"
+      $(function () {
+        $("#footer").load("footer.html");
+        $("#header").load("header.html");
+        
+        console.log("FOOTER LOADED");
+      });
+    </script>
   </head>
   <body>
-<header>
-    <div class="container">
-           <div id="branding">
-      <h1><img src="./images/logo2.png" width="20%"  style="margin-left: 35px"></h1>
-    </div>
-    <nav>
-      <ul>
-          <li class="current"><a href="index.html">HOME</a></li>
-          <li><a href="Why give blood.html">WHY GIVE BLOOD</a></li>
-          <li><a href="Registration.html">REGISTER</a></li>
-          <li><a href="our camps.html">OUR CAMPS</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="sign in.html">SIGN IN</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div id="header"></div>
     <section id="showcase">
     <div class="background-wrap">
      <video id="video-bg" preload="auto" autoplay loop muted>
@@ -48,23 +44,13 @@
   </section>
   <section id="newsletter">
   <div id="mn" class="container">
-  <h1>Subscribe to our Newsletter</h1>
+  <h1 class="h1">Subscribe to our Newsletter</h1>
   <form>
- <input type="Email" placeholder="Enter Email...">
- <button type="submit" class="button_1">Subscribe</button>
+ <input class="input-group mb-3" type="email" placeholder="Enter your mail address...">
+ <button type="submit" class="btn btn-danger">Subscribe</button>
   </form>
   </div>
   </section>
-  
- 
-  <footer>
-   <div class="social">
-		<div class="heading">Follow Us</div>
-		<a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
-		<a href="#"><img src="./images/twtter.png" alt="Twitter" /></a>
-		<a href="#"><img src="./images/insta.png" alt="Instagram" /></a>
-	</div>
-    <p style="text-align:center;margin-left: 185px;">Blood Donation | Copyright &copy; 2021</p>
-  </footer>
+  <div id="footer"></div>
   </body>
 </html>

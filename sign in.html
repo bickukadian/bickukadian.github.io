@@ -1,75 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="professional web design">
-    <meta name="author" content="ashish">
-    <title>Blood Donation | Sign in</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/fevicon.png" type="image/png">
-  </head>
-  <body>
-<header>
-    <div class="container">
-           <div id="branding">
-      <h1><img src="./images/logo2.png" width="20%"  style="margin-left: 35px"></h1>
-    </div>
-    <nav>
-     <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="Why give blood.html">WHY GIVE BLOOD</a></li>
-          <li><a href="Registration.html">REGISTER</a></li>
-          <li><a href="our camps.html">OUR CAMPS</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li  class="current"><a href="#">SIGN IN</a></li>
-          <li><a href="about.html">ABOUT</a></li>
+<html lang="en">
 
-      </ul>
-    </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sign In</title>
+  <link rel="shortcut icon" href="./images/fevicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>\
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+    src = "http://code.jquery.com/jquery-1.11.0.min.js"
+    $(function () {
+      $("#footer").load("footer.html");
+      $("#header").load("header.html");
+
+      console.log("FOOTER LOADED");
+    });
+  </script>
+  <style>
+    .login-form {
+      width: 340px;
+      margin: 50px auto;
+      font-size: 15px;
+    }
+
+    .login-form form {
+      margin-bottom: 15px;
+      background: #f7f7f7;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+    }
+
+    .login-form h2 {
+      margin: 0 0 15px;
+    }
+
+    .form-control,
+    .btn {
+      min-height: 38px;
+      border-radius: 2px;
+    }
+
+    .btn {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="login-form">
+    <form>
+      <h2 class="text-center">Log in</h2>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Username" required="required">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password" required="required">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-danger btn-block">Log in</button>
+      </div>
+      <div class="clearfix">
+        <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+      </div>
+    </form>
+    <p class="text-center"><a href="/Registration.html" style="color: red;">Create an Account</a></p>
   </div>
-</header>
+  <div id="footer"></div>
+</body>
 
-  <form action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="./images/img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
-  <section id="newsletter">
-  <div class="container">
-  <h1>Subscribe to our Newsletter</h1>
-  <form>
- <input type="Email" placeholder="Enter Email...">
- <button type="submit" class="button_1">Subscribe</button>
-  </form>
-  </div>
-  </section>
-
-    <footer>
-   <div class="social">
-		<div class="heading">Follow Us</div>
-		<img src="./images/facebook.png" alt="Facebook" />
-		<img src="./images/twtter.png" alt="Twitter" />
-		<img src="./images/insta.png" alt="Instagram" />
-	</div>
-    <p style="text-align:center;margin-left: 185px;">Blood Donation | Copyright &copy; 2021</p>
-  </footer>
-  </body>
 </html>
